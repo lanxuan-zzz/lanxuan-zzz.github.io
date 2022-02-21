@@ -4,25 +4,6 @@
   
     
     <entry>
-      <title>博客自建教程</title>
-      <link href="/2022/02/17/%E5%8D%9A%E5%AE%A2%E8%87%AA%E5%BB%BA%E6%95%99%E7%A8%8B/"/>
-      <url>/2022/02/17/%E5%8D%9A%E5%AE%A2%E8%87%AA%E5%BB%BA%E6%95%99%E7%A8%8B/</url>
-      
-        <content type="html"><![CDATA[<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="1-注册一个GitHub-github账号并创建一个库"><a href="#1-注册一个GitHub-github账号并创建一个库" class="headerlink" title="1.注册一个GitHub: github账号并创建一个库"></a>1.注册一个GitHub: <a href="https://github.com/">github</a>账号并创建一个库</h3><p>库的名字为你的id.github.io </p><p>注意：如果你没有创建过GitHub的token的话，这里最好创建一个，因为现在使用token来代替GitHub的密码进行登录，你之前的密码将不能用于GitHub的登录。</p><h3 id="2-安装git，这部分很简单一路默认安装就可以了。"><a href="#2-安装git，这部分很简单一路默认安装就可以了。" class="headerlink" title="2.安装git，这部分很简单一路默认安装就可以了。"></a>2.安装<a href="https://git-scm.com/download/win">git</a>，这部分很简单一路默认安装就可以了。</h3><h3 id="3-​-安装nodejs-和Hexo，其实这个步骤是成功部署博客的核心。"><a href="#3-​-安装nodejs-和Hexo，其实这个步骤是成功部署博客的核心。" class="headerlink" title="3.​ 安装nodejs 和Hexo，其实这个步骤是成功部署博客的核心。"></a>3.​ 安装nodejs 和Hexo，其实这个步骤是成功部署博客的核心。</h3><p><a href="https://nodejs.org/en/">nodejs官网</a><br><a href="https://blog.csdn.net/antma/article/details/86104068?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522164509649716780357291865%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=164509649716780357291865&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-2-86104068.first_rank_v2_pc_rank_v29&utm_term=Node.js%E6%9C%80%E6%96%B0%E6%9C%80%E8%AF%A6%E7%BB%86%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B&spm=1018.2226.3001.4187">nodejs安装教程</a></p><h4 id="Hexo的安装"><a href="#Hexo的安装" class="headerlink" title="Hexo的安装"></a>Hexo的安装</h4><p>之前我们已经在GitHub上创建了一个库，现在我们要做的就是在一个磁盘上新建一个Blog的文件夹来存放我们的blog文件。<br>点开Blog文件夹右键运行Git Bush Here，输入:</p><pre class=" language-bash"><code class="language-bash">$ <span class="token function">npm</span> <span class="token function">install</span> -g hexo-cli</code></pre><p>完成后，输入 hexo init 来初始化博客。</p><pre class=" language-bash"><code class="language-bash">$ hexo init</code></pre><p>输入 hexo g 静态部署</p><pre class=" language-bash"><code class="language-bash">$ hexo g</code></pre><p>加载完后我们的网页已经部署完成</p><p>输入 hexo s 来查看</p><pre class=" language-bash"><code class="language-bash">$ hexo s</code></pre><p>在浏览器上输入 <a href="http://localhost:4000/">http://localhost:4000</a> 就可以打开新部署的网页。、</p><h3 id="将网页上传到Github"><a href="#将网页上传到Github" class="headerlink" title="将网页上传到Github"></a>将网页上传到Github</h3><p>打开之前的 Blog 文件夹，用笔记本打开 _config.yml 文件</p><p>在文件底部添加如下字段</p><pre class=" language-bash"><code class="language-bash">deploy:  type: <span class="token function">git</span>  repository: https://github.com/huahuiPj/xxx.github.io.git  <span class="token comment" spellcheck="true">#你的仓库地址</span>  branch: master</code></pre><p>仓库的地址在code里</p><p>注：branch 的值与你GitHub仓库的值是否一样。</p><p>之后blog文件夹打开Git Bash，安装Git部署插件，输入命令：</p><pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-deployer-git --save</code></pre><p>之后输入下面三个命令：</p><pre class=" language-bash"><code class="language-bash">hexo clean   <span class="token comment" spellcheck="true">#清除缓存文件 db.json 和已生成的静态文件 public</span>hexo g       <span class="token comment" spellcheck="true">#生成网站静态文件到默认设置的 public 文件夹(hexo generate 的缩写)</span>hexo d       <span class="token comment" spellcheck="true">#自动生成网站静态文件，并部署到设定的仓库(hexo deploy 的缩写)</span></code></pre><p>完成以后，打开浏览器，输入 <a href="https://xxx.github.io就可以打开你的网页了/">https://xxx.github.io就可以打开你的网页了</a></p><h3 id="博客主题"><a href="#博客主题" class="headerlink" title="博客主题"></a>博客主题</h3><p>我使用的是<a href="https://github.com/blinkfox/hexo-theme-matery">hexo-theme-matery</a>的博客主题、<br><a href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md">主题中文配置的说明文档</a></p><p>OK了，教程到此结束。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> web前端 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Hello World</title>
       <link href="/2022/01/31/hello-world/"/>
       <url>/2022/01/31/hello-world/</url>
