@@ -31,7 +31,7 @@
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.1"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<meta name="generator" content="Hexo 5.4.1"></head>
 
 
 
@@ -471,7 +471,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    608
+                    710
                 </div>
                 
 
@@ -493,6 +493,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
 
@@ -501,75 +504,74 @@
                 <h2 id="第一种"><a href="#第一种" class="headerlink" title="第一种"></a>第一种</h2><h3 id="修改属性值"><a href="#修改属性值" class="headerlink" title="修改属性值"></a>修改属性值</h3><p>打开博客所在的文件夹，找到_config.yml文件，修改post_asset_folder的值为 true</p>
 <p>每次执行hexo n “文件名”命令，文件所在文件夹同时创建一个与同名文件执行时的文件夹，就可以把文件找寻这个文件夹内。</p>
 <p>打开你的 md 文件，使用标签插件来插入同名文件夹内代码的图片</p>
-<pre class=" language-bash"><code class="language-bash"><span class="token operator">!</span><span class="token punctuation">[</span>图片描述<span class="token punctuation">]</span><span class="token punctuation">(</span>/md文件夹名字/name.jpg<span class="token punctuation">)</span>
-</code></pre>
+<pre class="line-numbers language-none"><code class="language-none">![图片描述](&#x2F;md文件夹名字&#x2F;name.jpg)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
 <p>如果不能正常显示则往下看</p>
 <hr>
 <h2 id="第二种"><a href="#第二种" class="headerlink" title="第二种"></a>第二种</h2><h3 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h3><p>在目录 blog 调用 git bash<br>输入命令</p>
-<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> https://github.com/CodeFalling/hexo-asset-image --save
-</code></pre>
+<pre class="line-numbers language-none"><code class="language-none">npm install https:&#x2F;&#x2F;github.com&#x2F;CodeFalling&#x2F;hexo-asset-image --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>找到/node_modules/hexo-asset-image/index.js文件，修改文件内容</p>
-<pre class=" language-bash"><code class="language-bash"><span class="token string">'use strict'</span><span class="token punctuation">;</span>
-var cheerio <span class="token operator">=</span> require<span class="token punctuation">(</span><span class="token string">'cheerio'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">&#39;use strict&#39;;
+var cheerio &#x3D; require(&#39;cheerio&#39;);
 
-// http://stackoverflow.com/questions/14480345/how-to-get-the-nth-occurrence-in-a-string
-<span class="token keyword">function</span> getPosition<span class="token punctuation">(</span>str, m, i<span class="token punctuation">)</span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
-  <span class="token keyword">return</span> str.split<span class="token punctuation">(</span>m, i<span class="token punctuation">)</span>.join<span class="token punctuation">(</span>m<span class="token punctuation">)</span>.length<span class="token punctuation">;</span>
-<span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>
+&#x2F;&#x2F; http:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;14480345&#x2F;how-to-get-the-nth-occurrence-in-a-string
+function getPosition(str, m, i) &#123;
+  return str.split(m, i).join(m).length;
+&#125;
 
-var version <span class="token operator">=</span> String<span class="token punctuation">(</span>hexo.version<span class="token punctuation">)</span>.split<span class="token punctuation">(</span><span class="token string">'.'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-hexo.extend.filter.register<span class="token punctuation">(</span><span class="token string">'after_post_render'</span>, function<span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
-  var config <span class="token operator">=</span> hexo.config<span class="token punctuation">;</span>
-  if<span class="token punctuation">(</span>config.post_asset_folder<span class="token punctuation">)</span><span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
-      var <span class="token function">link</span> <span class="token operator">=</span> data.permalink<span class="token punctuation">;</span>
-  if<span class="token punctuation">(</span>version.length <span class="token operator">></span> 0 <span class="token operator">&amp;&amp;</span> Number<span class="token punctuation">(</span>version<span class="token punctuation">[</span>0<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">==</span> 3<span class="token punctuation">)</span>
-     var beginPos <span class="token operator">=</span> getPosition<span class="token punctuation">(</span>link, <span class="token string">'/'</span>, 1<span class="token punctuation">)</span> + 1<span class="token punctuation">;</span>
-  <span class="token keyword">else</span>
-     var beginPos <span class="token operator">=</span> getPosition<span class="token punctuation">(</span>link, <span class="token string">'/'</span>, 3<span class="token punctuation">)</span> + 1<span class="token punctuation">;</span>
-  // In hexo 3.1.1, the permalink of <span class="token string">"about"</span> page is like <span class="token string">".../about/index.html"</span><span class="token keyword">.</span>
-  var endPos <span class="token operator">=</span> link.lastIndexOf<span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span> + 1<span class="token punctuation">;</span>
-    <span class="token function">link</span> <span class="token operator">=</span> link.substring<span class="token punctuation">(</span>beginPos, endPos<span class="token punctuation">)</span><span class="token punctuation">;</span>
-var toprocess <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'excerpt'</span>, <span class="token string">'more'</span>, <span class="token string">'content'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-for<span class="token punctuation">(</span>var i <span class="token operator">=</span> 0<span class="token punctuation">;</span> i <span class="token operator">&lt;</span> toprocess.length<span class="token punctuation">;</span> i++<span class="token punctuation">)</span><span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
-  var key <span class="token operator">=</span> toprocess<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+var version &#x3D; String(hexo.version).split(&#39;.&#39;);
+hexo.extend.filter.register(&#39;after_post_render&#39;, function(data)&#123;
+  var config &#x3D; hexo.config;
+  if(config.post_asset_folder)&#123;
+      var link &#x3D; data.permalink;
+  if(version.length &gt; 0 &amp;&amp; Number(version[0]) &#x3D;&#x3D; 3)
+     var beginPos &#x3D; getPosition(link, &#39;&#x2F;&#39;, 1) + 1;
+  else
+     var beginPos &#x3D; getPosition(link, &#39;&#x2F;&#39;, 3) + 1;
+  &#x2F;&#x2F; In hexo 3.1.1, the permalink of &quot;about&quot; page is like &quot;...&#x2F;about&#x2F;index.html&quot;.
+  var endPos &#x3D; link.lastIndexOf(&#39;&#x2F;&#39;) + 1;
+    link &#x3D; link.substring(beginPos, endPos);
+var toprocess &#x3D; [&#39;excerpt&#39;, &#39;more&#39;, &#39;content&#39;];
+for(var i &#x3D; 0; i &lt; toprocess.length; i++)&#123;
+  var key &#x3D; toprocess[i];
 
-  var $ <span class="token operator">=</span> cheerio.load<span class="token punctuation">(</span>data<span class="token punctuation">[</span>key<span class="token punctuation">]</span>, <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
+  var $ &#x3D; cheerio.load(data[key], &#123;
     ignoreWhitespace: false,
     xmlMode: false,
     lowerCaseTags: false,
-    decodeEntities: <span class="token boolean">false</span>
-  <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;);</span>
+    decodeEntities: false
+  &#125;);
 
-  <span class="token punctuation">$(</span><span class="token string">'img'</span><span class="token punctuation">)</span>.each<span class="token punctuation">(</span>function<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
-<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable"><span class="token variable">$(</span>this<span class="token variable">)</span></span>.attr<span class="token punctuation">(</span><span class="token string">'src'</span><span class="token punctuation">))</span><span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
-  // For windows style path, we replace <span class="token string">'\' to '</span>/<span class="token string">'.
-  var src = <span class="token variable"><span class="token variable">$(</span>this<span class="token variable">)</span></span>.attr('</span>src<span class="token string">').replace('</span>\\<span class="token string">', '</span>/<span class="token string">');
-  if(!/http[s]*.*|\/\/.*/.test(src) &amp;&amp;
-     !/^\s*\//.test(src)) &amp;#123;
-    // For "about" page, the first part of "src" can'</span>t be removed.
-    // In addition, to support multi-level local directory.
-    var linkArray <span class="token operator">=</span> link.split<span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span>.filter<span class="token punctuation">(</span>function<span class="token punctuation">(</span>elem<span class="token punctuation">)</span><span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
-    <span class="token keyword">return</span> elem <span class="token operator">!=</span> <span class="token string">''</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;);</span>
-    var srcArray <span class="token operator">=</span> src.split<span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span>.filter<span class="token punctuation">(</span>function<span class="token punctuation">(</span>elem<span class="token punctuation">)</span><span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
-    <span class="token keyword">return</span> elem <span class="token operator">!=</span> <span class="token string">''</span> <span class="token operator">&amp;&amp;</span> elem <span class="token operator">!=</span> <span class="token string">'.'</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;);</span>
-    if<span class="token punctuation">(</span>srcArray.length <span class="token operator">></span> 1<span class="token punctuation">)</span>
-    srcArray.shift<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    src <span class="token operator">=</span> srcArray.join<span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token variable"><span class="token variable">$(</span>this<span class="token variable">)</span></span>.attr<span class="token punctuation">(</span><span class="token string">'src'</span>, config.root + <span class="token function">link</span> + src<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    console.info<span class="token operator">&amp;&amp;</span>console.info<span class="token punctuation">(</span><span class="token string">"update link as:-->"</span>+config.root + <span class="token function">link</span> + src<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>
-<span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;else&amp;#123;</span>
-  console.info<span class="token operator">&amp;&amp;</span>console.info<span class="token punctuation">(</span><span class="token string">"no src attr, skipped..."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  console.info<span class="token operator">&amp;&amp;</span>console.info<span class="token punctuation">(</span><span class="token variable"><span class="token variable">$(</span>this<span class="token variable">)</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>
-  <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;);</span>
-  data<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">=</span> $.html<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>
-  <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>
-<span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;);</span>
-</code></pre>
+  $(&#39;img&#39;).each(function()&#123;
+if ($(this).attr(&#39;src&#39;))&#123;
+  &#x2F;&#x2F; For windows style path, we replace &#39;\&#39; to &#39;&#x2F;&#39;.
+  var src &#x3D; $(this).attr(&#39;src&#39;).replace(&#39;\\&#39;, &#39;&#x2F;&#39;);
+  if(!&#x2F;http[s]*.*|\&#x2F;\&#x2F;.*&#x2F;.test(src) &amp;&amp;
+     !&#x2F;^\s*\&#x2F;&#x2F;.test(src)) &#123;
+    &#x2F;&#x2F; For &quot;about&quot; page, the first part of &quot;src&quot; can&#39;t be removed.
+    &#x2F;&#x2F; In addition, to support multi-level local directory.
+    var linkArray &#x3D; link.split(&#39;&#x2F;&#39;).filter(function(elem)&#123;
+    return elem !&#x3D; &#39;&#39;;
+    &#125;);
+    var srcArray &#x3D; src.split(&#39;&#x2F;&#39;).filter(function(elem)&#123;
+    return elem !&#x3D; &#39;&#39; &amp;&amp; elem !&#x3D; &#39;.&#39;;
+    &#125;);
+    if(srcArray.length &gt; 1)
+    srcArray.shift();
+    src &#x3D; srcArray.join(&#39;&#x2F;&#39;);
+    $(this).attr(&#39;src&#39;, config.root + link + src);
+    console.info&amp;&amp;console.info(&quot;update link as:--&gt;&quot;+config.root + link + src);
+  &#125;
+&#125;else&#123;
+  console.info&amp;&amp;console.info(&quot;no src attr, skipped...&quot;);
+  console.info&amp;&amp;console.info($(this));
+    &#125;
+  &#125;);
+  data[key] &#x3D; $.html();
+    &#125;
+  &#125;
+&#125;);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
 <p>之后在执行<code>hexo n &quot;文件名&quot;</code>命令，把图片放到同名文件夹内再引用</p>
 <hr>
 <h3 id="第三种（个人推荐）"><a href="#第三种（个人推荐）" class="headerlink" title="第三种（个人推荐）"></a>第三种（个人推荐）</h3><h3 id="使用即刻图床（浏览器扩展插件）"><a href="#使用即刻图床（浏览器扩展插件）" class="headerlink" title="使用即刻图床（浏览器扩展插件）"></a>使用即刻图床（浏览器扩展插件）</h3><p>电脑内的图片或者拖拽图片，生成markdown连接，复制粘贴到md文件中。</p>
@@ -1113,7 +1115,7 @@ for<span class="token punctuation">(</span>var i <span class="token operator">=<
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">4k</span>
+                        class="white-color">4.1k</span>
             
             
             
@@ -1400,6 +1402,6 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</body>
 
 </html>
