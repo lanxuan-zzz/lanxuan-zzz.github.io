@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-02-26T09:41:00.224Z</updated>
+  <updated>2022-06-12T01:10:37.117Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>永劫无间</title>
+    <link href="http://example.com/2022/06/10/you-xi/"/>
+    <id>http://example.com/2022/06/10/you-xi/</id>
+    <published>2022-06-10T14:02:25.000Z</published>
+    <updated>2022-06-12T01:10:37.117Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="心中无学习，刀法自然神"><a href="#心中无学习，刀法自然神" class="headerlink" title="心中无学习，刀法自然神"></a><font color=red>心中无学习，刀法自然神</font></h2><hr><p><img src="https://pic.rmb.bdstatic.com/bjh/5b0f54471f485bc764e7fc273df2283c.jpeg" alt="gggin-y.jpg"><br><img src="https://pic.rmb.bdstatic.com/bjh/44b40d3632455a023fbb284be48630d4.jpeg" alt="gggin-y (1).jpg"><br><img src="https://pic.rmb.bdstatic.com/bjh/6ad855ea62ff642a6061e283fc268f45.jpeg" alt="kaijia-jia-1 (1).jpg"><br><img src="https://pic.rmb.bdstatic.com/bjh/f70f272773f4a17a27602239476a6467.jpeg" alt="kaijia-jia-1.jpg"><br><img src="https://pic.rmb.bdstatic.com/bjh/1811b64062b59fae9483c9b3ba98c8b8.jpeg" alt="kaijia-jia-23.jpg"></p><p><img src="https://pic.rmb.bdstatic.com/bjh/640f8e9bdea6c4907ebacd3385d2d06c.jpeg" alt="封面.jpg"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="游戏" scheme="http://example.com/categories/%E6%B8%B8%E6%88%8F/"/>
+    
+    
+    <category term="永劫无间" scheme="http://example.com/tags/%E6%B0%B8%E5%8A%AB%E6%97%A0%E9%97%B4/"/>
+    
+  </entry>
   
   <entry>
     <title>mark down图片上传博客失败解决方法</title>
