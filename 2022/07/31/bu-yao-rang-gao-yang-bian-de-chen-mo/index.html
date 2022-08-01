@@ -4,9 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mark down图片上传博客失败解决方法, 棉花糖">
-    <meta name="description" content="第一种修改属性值打开博客所在的文件夹，找到_config.yml文件，修改post_asset_folder的值为 true
-每次执行hexo n “文件名”命令，文件所在文件夹同时创建一个与同名文件执行时的文件夹，就可以把文件找寻这个文件">
+    <meta name="keywords" content="不要让羔羊变得沉默, 棉花糖">
+    <meta name="description" content="为众人抱薪者，不可使其冻毙于风雪；为大众谋福利者，不可使其孤军奋战；为自由开路者，不可使其困顿于荆棘。如果天空是黑暗的，那就摸黑生存；如果发出声音是危险的，那就保持沉默；如果自觉无力发光，那就蜷伏于墙角。但是，不要习惯了黑暗就为黑暗辩护，也">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>mark down图片上传博客失败解决方法 | 棉花糖</title>
+    <title>不要让羔羊变得沉默 | 棉花糖</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -249,12 +248,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">mark down图片上传博客失败解决方法</h1>
+                    <h1 class="description center-align post-title">不要让羔羊变得沉默</h1>
                 </div>
             </div>
         </div>
@@ -370,8 +369,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%8D%9A%E5%AE%A2/">
-                                <span class="chip bg-color">博客</span>
+                            <a href="/tags/%E7%A4%BE%E4%BC%9A%E4%BA%BA%E6%96%87/">
+                                <span class="chip bg-color">社会人文</span>
                             </a>
                         
                     </div>
@@ -386,28 +385,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-02-26
+                    2022-07-31
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-02-26
+                    2022-08-01
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    710
+                    148
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    1 分
                 </div>
                 
 
@@ -430,82 +429,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="第一种"><a href="#第一种" class="headerlink" title="第一种"></a>第一种</h2><h3 id="修改属性值"><a href="#修改属性值" class="headerlink" title="修改属性值"></a>修改属性值</h3><p>打开博客所在的文件夹，找到_config.yml文件，修改post_asset_folder的值为 true</p>
-<p>每次执行hexo n “文件名”命令，文件所在文件夹同时创建一个与同名文件执行时的文件夹，就可以把文件找寻这个文件夹内。</p>
-<p>打开你的 md 文件，使用标签插件来插入同名文件夹内代码的图片</p>
-<pre class="line-numbers language-none"><code class="language-none">![图片描述](&#x2F;md文件夹名字&#x2F;name.jpg)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>如果不能正常显示则往下看</p>
-<hr>
-<h2 id="第二种"><a href="#第二种" class="headerlink" title="第二种"></a>第二种</h2><h3 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h3><p>在目录 blog 调用 git bash<br>输入命令</p>
-<pre class="line-numbers language-none"><code class="language-none">npm install https:&#x2F;&#x2F;github.com&#x2F;CodeFalling&#x2F;hexo-asset-image --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>找到/node_modules/hexo-asset-image/index.js文件，修改文件内容</p>
-<pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">&#39;use strict&#39;;
-var cheerio &#x3D; require(&#39;cheerio&#39;);
-
-&#x2F;&#x2F; http:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;14480345&#x2F;how-to-get-the-nth-occurrence-in-a-string
-function getPosition(str, m, i) &#123;
-  return str.split(m, i).join(m).length;
-&#125;
-
-var version &#x3D; String(hexo.version).split(&#39;.&#39;);
-hexo.extend.filter.register(&#39;after_post_render&#39;, function(data)&#123;
-  var config &#x3D; hexo.config;
-  if(config.post_asset_folder)&#123;
-      var link &#x3D; data.permalink;
-  if(version.length &gt; 0 &amp;&amp; Number(version[0]) &#x3D;&#x3D; 3)
-     var beginPos &#x3D; getPosition(link, &#39;&#x2F;&#39;, 1) + 1;
-  else
-     var beginPos &#x3D; getPosition(link, &#39;&#x2F;&#39;, 3) + 1;
-  &#x2F;&#x2F; In hexo 3.1.1, the permalink of &quot;about&quot; page is like &quot;...&#x2F;about&#x2F;index.html&quot;.
-  var endPos &#x3D; link.lastIndexOf(&#39;&#x2F;&#39;) + 1;
-    link &#x3D; link.substring(beginPos, endPos);
-var toprocess &#x3D; [&#39;excerpt&#39;, &#39;more&#39;, &#39;content&#39;];
-for(var i &#x3D; 0; i &lt; toprocess.length; i++)&#123;
-  var key &#x3D; toprocess[i];
-
-  var $ &#x3D; cheerio.load(data[key], &#123;
-    ignoreWhitespace: false,
-    xmlMode: false,
-    lowerCaseTags: false,
-    decodeEntities: false
-  &#125;);
-
-  $(&#39;img&#39;).each(function()&#123;
-if ($(this).attr(&#39;src&#39;))&#123;
-  &#x2F;&#x2F; For windows style path, we replace &#39;\&#39; to &#39;&#x2F;&#39;.
-  var src &#x3D; $(this).attr(&#39;src&#39;).replace(&#39;\\&#39;, &#39;&#x2F;&#39;);
-  if(!&#x2F;http[s]*.*|\&#x2F;\&#x2F;.*&#x2F;.test(src) &amp;&amp;
-     !&#x2F;^\s*\&#x2F;&#x2F;.test(src)) &#123;
-    &#x2F;&#x2F; For &quot;about&quot; page, the first part of &quot;src&quot; can&#39;t be removed.
-    &#x2F;&#x2F; In addition, to support multi-level local directory.
-    var linkArray &#x3D; link.split(&#39;&#x2F;&#39;).filter(function(elem)&#123;
-    return elem !&#x3D; &#39;&#39;;
-    &#125;);
-    var srcArray &#x3D; src.split(&#39;&#x2F;&#39;).filter(function(elem)&#123;
-    return elem !&#x3D; &#39;&#39; &amp;&amp; elem !&#x3D; &#39;.&#39;;
-    &#125;);
-    if(srcArray.length &gt; 1)
-    srcArray.shift();
-    src &#x3D; srcArray.join(&#39;&#x2F;&#39;);
-    $(this).attr(&#39;src&#39;, config.root + link + src);
-    console.info&amp;&amp;console.info(&quot;update link as:--&gt;&quot;+config.root + link + src);
-  &#125;
-&#125;else&#123;
-  console.info&amp;&amp;console.info(&quot;no src attr, skipped...&quot;);
-  console.info&amp;&amp;console.info($(this));
-    &#125;
-  &#125;);
-  data[key] &#x3D; $.html();
-    &#125;
-  &#125;
-&#125;);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>之后在执行<code>hexo n &quot;文件名&quot;</code>命令，把图片放到同名文件夹内再引用</p>
-<hr>
-<h3 id="第三种（个人推荐）"><a href="#第三种（个人推荐）" class="headerlink" title="第三种（个人推荐）"></a>第三种（个人推荐）</h3><h3 id="使用即刻图床（浏览器扩展插件）"><a href="#使用即刻图床（浏览器扩展插件）" class="headerlink" title="使用即刻图床（浏览器扩展插件）"></a>使用即刻图床（浏览器扩展插件）</h3><p>电脑内的图片或者拖拽图片，生成markdown连接，复制粘贴到md文件中。</p>
-<p>前面几个图片方法没有成功，只有图床能够完整并且全部显示的插件。</p>
-<p>如果标签插件和安装插件都没有成功的话可以试一下图床扩展！</p>
+                <h3 id="为众人抱薪者，不可使其冻毙于风雪；"><a href="#为众人抱薪者，不可使其冻毙于风雪；" class="headerlink" title="为众人抱薪者，不可使其冻毙于风雪；"></a>为众人抱薪者，不可使其冻毙于风雪；</h3><h3 id="为大众谋福利者，不可使其孤军奋战；"><a href="#为大众谋福利者，不可使其孤军奋战；" class="headerlink" title="为大众谋福利者，不可使其孤军奋战；"></a>为大众谋福利者，不可使其孤军奋战；</h3><h3 id="为自由开路者，不可使其困顿于荆棘。"><a href="#为自由开路者，不可使其困顿于荆棘。" class="headerlink" title="为自由开路者，不可使其困顿于荆棘。"></a>为自由开路者，不可使其困顿于荆棘。</h3><h3 id="如果天空是黑暗的，那就摸黑生存；如果发出声音是危险的，那就保持沉默；如果自觉无力发光，那就蜷伏于墙角。但是，不要习惯了黑暗就为黑暗辩护，也不要为自己的苟且而得意，不要嘲讽那些比自己更勇敢的人。我们可以卑微如尘土，但不可扭曲如蛆虫"><a href="#如果天空是黑暗的，那就摸黑生存；如果发出声音是危险的，那就保持沉默；如果自觉无力发光，那就蜷伏于墙角。但是，不要习惯了黑暗就为黑暗辩护，也不要为自己的苟且而得意，不要嘲讽那些比自己更勇敢的人。我们可以卑微如尘土，但不可扭曲如蛆虫" class="headerlink" title="如果天空是黑暗的，那就摸黑生存；如果发出声音是危险的，那就保持沉默；如果自觉无力发光，那就蜷伏于墙角。但是，不要习惯了黑暗就为黑暗辩护，也不要为自己的苟且而得意，不要嘲讽那些比自己更勇敢的人。我们可以卑微如尘土，但不可扭曲如蛆虫"></a>如果天空是黑暗的，那就摸黑生存；如果发出声音是危险的，那就保持沉默；如果自觉无力发光，那就蜷伏于墙角。但是，不要习惯了黑暗就为黑暗辩护，也不要为自己的苟且而得意，不要嘲讽那些比自己更勇敢的人。我们可以卑微如尘土，但不可扭曲如蛆虫</h3><p><img src="https://pic.rmb.bdstatic.com/bjh/c2f8cd6f1ab90c222ad3b76e36f14448.jpeg"></p>
 
                 
             </div>
@@ -532,7 +456,7 @@ if ($(this).attr(&#39;src&#39;))&#123;
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2022/02/26/mark-down-tu-pian-shang-chuan-bo-ke-shi-bai-jie-jue-fang-fa/">http://example.com/2022/02/26/mark-down-tu-pian-shang-chuan-bo-ke-shi-bai-jie-jue-fang-fa/</a>
+                    <a href="http://example.com/2022/07/31/bu-yao-rang-gao-yang-bian-de-chen-mo/">http://example.com/2022/07/31/bu-yao-rang-gao-yang-bian-de-chen-mo/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -570,8 +494,8 @@ if ($(this).attr(&#39;src&#39;))&#123;
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%8D%9A%E5%AE%A2/">
-                                    <span class="chip bg-color">博客</span>
+                                <a href="/tags/%E7%A4%BE%E4%BC%9A%E4%BA%BA%E6%96%87/">
+                                    <span class="chip bg-color">社会人文</span>
                                 </a>
                             
                         </div>
@@ -767,9 +691,56 @@ if ($(this).attr(&#39;src&#39;))&#123;
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2022/07/31/bu-yao-rang-gao-yang-bian-de-chen-mo/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="不要让羔羊变得沉默">
+                        
+                        <span class="card-title">不要让羔羊变得沉默</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-31
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            John Doe
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%A4%BE%E4%BC%9A%E4%BA%BA%E6%96%87/">
+                        <span class="chip bg-color">社会人文</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2022/06/10/you-xi/">
                     <div class="card-image">
@@ -786,9 +757,9 @@ if ($(this).attr(&#39;src&#39;))&#123;
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-06-10
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-10
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -806,55 +777,6 @@ if ($(this).attr(&#39;src&#39;))&#123;
                     
                     <a href="/tags/%E6%B0%B8%E5%8A%AB%E6%97%A0%E9%97%B4/">
                         <span class="chip bg-color">永劫无间</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/02/25/md-wen-jian-yu-fa-bi-ji/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="md文件语法笔记">
-                        
-                        <span class="card-title">md文件语法笔记</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-25
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
-                                    笔记
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Markdown/">
-                        <span class="chip bg-color">Markdown</span>
                     </a>
                     
                 </div>
