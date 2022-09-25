@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-09-19T09:35:21.961Z</updated>
+  <updated>2022-09-19T09:40:56.629Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2022/09/19/flex-bu-ju-xue-xi-bi-ji/"/>
     <id>http://example.com/2022/09/19/flex-bu-ju-xue-xi-bi-ji/</id>
     <published>2022-09-19T07:35:13.000Z</published>
-    <updated>2022-09-19T09:35:21.961Z</updated>
+    <updated>2022-09-19T09:40:56.629Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><p>传统布局：兼容性好，布局繁琐，局限性在移动端不能很好布局 ，<br>Flex布局：简单，操作方便，兼容性差 ，<br>Pc采用传统布局，移动端或者不考虑兼容的pc可采用flex布局。</p><hr><h2 id="FLEX-布局原理"><a href="#FLEX-布局原理" class="headerlink" title="FLEX 布局原理"></a>FLEX 布局原理</h2><p>flex的布局原理就是：给父盒子添加flex属性，来控制紫盒子的排列方式来实现flex布局。<br>当父盒子设置flex属性的时候，子元素的float、clear和vertical-alin属性将失效。<br>FLEX布局又叫伸缩性布局，弹性布局，伸缩盒布局、弹性盒布局。</p><h2 id="常见属性"><a href="#常见属性" class="headerlink" title="常见属性"></a>常见属性</h2><h3 id="主轴（flex-direction）"><a href="#主轴（flex-direction）" class="headerlink" title="主轴（flex-direction）"></a>主轴（flex-direction）</h3><p>FLEX默认的主轴是row，x轴<br>改变主轴方向可以设置 <em>flex-direction</em>来改变</p> <pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token property">direction</span><span class="token punctuation">:</span>column<span class="token punctuation">;</span>将主轴改为y轴，纵轴 <span class="token property">direction</span><span class="token punctuation">:</span>row<span class="token punctuation">;</span> 将主轴改为x轴，横轴 <span class="token punctuation">(</span>默认<span class="token punctuation">)</span><span class="token property">direction</span><span class="token punctuation">:</span>row-reverse<span class="token punctuation">;</span>主轴为x轴，并且翻转<span class="token property">direction</span><span class="token punctuation">:</span>column-reverse<span class="token punctuation">;</span>主轴为y轴，并且翻转<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h4 id="主轴排列方式-justiy-content"><a href="#主轴排列方式-justiy-content" class="headerlink" title="主轴排列方式(justiy-content)"></a>主轴排列方式(justiy-content)</h4><pre class="line-numbers language-css" data-language="css"><code class="language-css">justify-content： <span class="token punctuation">;</span>能够设置主轴子元素的排列形式 start<span class="token punctuation">;</span>所有子元素在主轴头部显示 end<span class="token punctuation">;</span>所有子元素在主轴尾部显示 center<span class="token punctuation">;</span> 所有子元素在主轴居中对齐 around<span class="token punctuation">;</span>所有子元素平分剩余空间 between <span class="token punctuation">;</span>所有子元素先两边再平分剩余空间 开启flex布局后默认不换行 如想设置换行 <span class="token property">flex</span><span class="token punctuation">:</span>wrap Flex-flow就是flex-direction和flex-wrap的合写<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="副轴-align-items"><a href="#副轴-align-items" class="headerlink" title="副轴(align-items)"></a>副轴(align-items)</h3><p>利用align-items能够设置侧轴元素对齐的方式（单行）的时候使用。</p><pre class="line-numbers language-css" data-language="css"><code class="language-css">start ；表示从头开始end <span class="token punctuation">;</span>表示从结尾开始center <span class="token punctuation">;</span> 表示居中显示stretch <span class="token punctuation">;</span>将子元素拉伸多行使用 align-content<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="单个盒子设置"><a href="#单个盒子设置" class="headerlink" title="单个盒子设置"></a>单个盒子设置</h3><p>设置单个盒子的样式</p><pre class="line-numbers language-css" data-language="css"><code class="language-css">align-self：<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>设置单个盒子的优先顺序</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token property">oder</span><span class="token punctuation">:</span>0  //注意，是排列优先，而不是像z-index遮盖o是默认值，优先就改为负数<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>]]></content>
     
@@ -33,6 +33,10 @@
     
     
     
+    <category term="前端" scheme="http://example.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="FLEX" scheme="http://example.com/tags/FLEX/"/>
     
   </entry>
   
