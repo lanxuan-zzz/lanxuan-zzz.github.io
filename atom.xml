@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-09-19T09:40:56.629Z</updated>
+  <updated>2022-09-26T06:54:40.967Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>css3动画效果设置</title>
+    <link href="http://example.com/2022/09/26/css3-dong-hua-xiao-guo-she-zhi/"/>
+    <id>http://example.com/2022/09/26/css3-dong-hua-xiao-guo-she-zhi/</id>
+    <published>2022-09-26T05:18:24.000Z</published>
+    <updated>2022-09-26T06:54:40.967Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="设置CSS3动画的一般流程"><a href="#设置CSS3动画的一般流程" class="headerlink" title="设置CSS3动画的一般流程"></a>设置CSS3动画的一般流程</h2><ol><li>设置关键帧</li><li>将关键帧绑定到对应元素上</li><li>设置动画的播放时间<h3 id="关键帧动画设置"><a href="#关键帧动画设置" class="headerlink" title="关键帧动画设置"></a>关键帧动画设置</h3>@keyframes [名称] 的形式来定义关键帧。<br>form… to…来定义动画从开始到结束的样式<br>使用百分比来定义样式</li></ol><pre class="line-numbers language-css3" data-language="css3"><code class="language-css3">@keyframes example&#123;&#x2F;*第一种方式*&#x2F;    form &#123;font-size:50px&#125;    to&#123;font-size:30px&#125;&#125;@keyframes example&#123;    10%&#123;font-size: 50px&#125;    50%&#123;font-size: 30px&#125;    90%&#123;font-size: 10px&#125;    100%&#123;font-size: 0px&#125;&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>设置好动画后，给要添加动画的元素进行绑定<br>例：</p><pre class="line-numbers language-css3" data-language="css3"><code class="language-css3">span&#123;    animation-name: example;      animation-duration:5s;&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>animation的参数：</p><pre class="line-numbers language-css3" data-language="css3"><code class="language-css3">&lt;&#39; animation-name &#39;&gt;：检索或设置对象所应用的动画名称 &lt;&#39; animation-duration &#39;&gt;：检索或设置对象动画的持续时间 &lt;&#39; animation-timing-function &#39;&gt;：检索或设置对象动画的过渡类型 &lt;&#39; animation-delay &#39;&gt;：检索或设置对象动画延迟的时间 &lt;&#39; animation-iteration-count &#39;&gt;：检索或设置对象动画的循环次数 &lt;&#39; animation-direction &#39;&gt;：检索或设置对象动画在循环中是否反向运动 &lt;&#39; animation-fill-mode &#39;&gt;：检索或设置对象动画时间之外的状态 &lt;&#39; animation-play-state &#39;&gt;：检索或设置对象动画的状态。w3c正考虑是否将该属性移除，因为动画的状态可以通过其它的方式实现，比如重设样式<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="前端" scheme="http://example.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="css3" scheme="http://example.com/tags/css3/"/>
+    
+  </entry>
   
   <entry>
     <title>flex布局学习笔记</title>
