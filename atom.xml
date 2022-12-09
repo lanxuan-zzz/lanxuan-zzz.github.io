@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-11-05T10:52:47.617Z</updated>
+  <updated>2022-12-09T02:46:29.768Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>解决vuex不能持续存储的问题</title>
+    <link href="http://example.com/2022/12/08/jie-jue-vuex-bu-neng-chi-xu-cun-chu-de-wen-ti/"/>
+    <id>http://example.com/2022/12/08/jie-jue-vuex-bu-neng-chi-xu-cun-chu-de-wen-ti/</id>
+    <published>2022-12-08T12:04:48.000Z</published>
+    <updated>2022-12-09T02:46:29.768Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="简单说明一下VUEX的功能"><a href="#简单说明一下VUEX的功能" class="headerlink" title="简单说明一下VUEX的功能"></a>简单说明一下VUEX的功能</h2><p> 在使用vue的过程中，我们经常会使用vuex来存储全局数据，这样我们在各个组件都能很放便的调用</p><h2 id="缺陷"><a href="#缺陷" class="headerlink" title="缺陷"></a>缺陷</h2><p>vuex的内容值是储存在内存条里的，只能作为一个临时数据，无法持久化（当你不想重复或无法多次请求获取数据时，例：登录信息）<br>请求成功后返回的数据<br><img src="http://mmm.sanshui.vip:88/application/hide.php?key=UHpDeUhyWXIvbklrR2lVQ3RreDZaNnJ6YTg4N04vdnc0Tm9mbXdqRDFUQT0="><br>每次刷新页面，之前的数据都会丢失<br>刷新后数据为空<br><img src="http://mmm.sanshui.vip:88/application/hide.php?key=eWRTUXhOR0Z3RU9VZDNZY3QrcXRoam5TbEdlUHA5a1RJRnpUTmdKSFNaND0="></p><h2 id="解决的办法"><a href="#解决的办法" class="headerlink" title="解决的办法"></a>解决的办法</h2><h3 id="使用本都存储localStorage"><a href="#使用本都存储localStorage" class="headerlink" title="使用本都存储localStorage"></a>使用本都存储localStorage</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">//在获取到登录信息后</span><span class="token comment">//我们使用localstorage将登录信息存储在本地做持续化储存</span><span class="token comment">//在存储之前我们需要准换成JSON格式</span>localStorage<span class="token punctuation">.</span><span class="token function">setItem</span><span class="token punctuation">(</span><span class="token string">'user'</span><span class="token punctuation">,</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>state<span class="token punctuation">.</span>user<span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p><img src="http://mmm.sanshui.vip:88/application/hide.php?key=VzE3RVZZRyt2QXRGR3BOV0I2VXVzYzcrVFlyN0JzZGhRb0RVSE5veHNwTT0=" alt="1"></p><p>之后我们需要数据的时候就可以在localstorage里面拉出来使用</p><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">&#123;</span>        <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>            <span class="token keyword">return</span> <span class="token punctuation">&#123;</span>                <span class="token comment">// 创建一个存储user的对象</span>                <span class="token literal-property property">user</span><span class="token operator">:</span><span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span>            <span class="token punctuation">&#125;</span>                <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>    <span class="token function">created</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>         <span class="token comment">// 当页面渲染完成时，获取localstorage里面的user并赋值给data的user</span>         <span class="token keyword">this</span><span class="token punctuation">.</span>user <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>localStorage<span class="token punctuation">.</span><span class="token function">getItem</span><span class="token punctuation">(</span><span class="token string">'user'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>         console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>user<span class="token punctuation">,</span><span class="token string">'this.user'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>刷新一下，看一下是否获取到了</p><h3 id="成功"><a href="#成功" class="headerlink" title="成功"></a>成功</h3><p><img src="http://mmm.sanshui.vip:88/application/hide.php?key=UHpDeUhyWXIvbklrR2lVQ3RreDZaNnJ6YTg4N04vdnc0Tm9mbXdqRDFUQT0="></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="vue" scheme="http://example.com/tags/vue/"/>
+    
+  </entry>
   
   <entry>
     <title></title>
