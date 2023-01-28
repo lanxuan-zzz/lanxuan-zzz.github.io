@@ -36,7 +36,9 @@
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.1"><link rel="alternate" href="/atom.xml" title="棉花糖" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.4.1">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="棉花糖" type="application/atom+xml">
 </head>
 
 
@@ -415,7 +417,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    371
+                    335
                 </div>
                 
 
@@ -450,30 +452,30 @@
 <li>将关键帧绑定到对应元素上</li>
 <li>设置动画的播放时间<h3 id="关键帧动画设置"><a href="#关键帧动画设置" class="headerlink" title="关键帧动画设置"></a>关键帧动画设置</h3>@keyframes [名称] 的形式来定义关键帧。<br>form… to…来定义动画从开始到结束的样式<br>使用百分比来定义样式</li>
 </ol>
-<pre class="line-numbers language-css3" data-language="css3"><code class="language-css3">@keyframes example&#123;&#x2F;*第一种方式*&#x2F;
-    form &#123;font-size:50px&#125;
-    to&#123;font-size:30px&#125;
-&#125;
-@keyframes example&#123;
-    10%&#123;font-size: 50px&#125;
-    50%&#123;font-size: 30px&#125;
-    90%&#123;font-size: 10px&#125;
-    100%&#123;font-size: 0px&#125;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-css3" data-language="css3"><code class="language-css3">@keyframes example{/*第一种方式*/
+    form {font-size:50px}
+    to{font-size:30px}
+}
+@keyframes example{
+    10%{font-size: 50px}
+    50%{font-size: 30px}
+    90%{font-size: 10px}
+    100%{font-size: 0px}
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>设置好动画后，给要添加动画的元素进行绑定<br>例：</p>
-<pre class="line-numbers language-css3" data-language="css3"><code class="language-css3">span&#123;
+<pre class="line-numbers language-css3" data-language="css3"><code class="language-css3">span{
     animation-name: example;  
     animation-duration:5s;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>animation的参数：</p>
-<pre class="line-numbers language-css3" data-language="css3"><code class="language-css3">&lt;&#39; animation-name &#39;&gt;：检索或设置对象所应用的动画名称 
-&lt;&#39; animation-duration &#39;&gt;：检索或设置对象动画的持续时间 
-&lt;&#39; animation-timing-function &#39;&gt;：检索或设置对象动画的过渡类型 
-&lt;&#39; animation-delay &#39;&gt;：检索或设置对象动画延迟的时间 
-&lt;&#39; animation-iteration-count &#39;&gt;：检索或设置对象动画的循环次数 
-&lt;&#39; animation-direction &#39;&gt;：检索或设置对象动画在循环中是否反向运动 
-&lt;&#39; animation-fill-mode &#39;&gt;：检索或设置对象动画时间之外的状态 
-&lt;&#39; animation-play-state &#39;&gt;：检索或设置对象动画的状态。w3c正考虑是否将该属性移除，因为动画的状态可以通过其它的方式实现，比如重设样式<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-css3" data-language="css3"><code class="language-css3">&lt;' animation-name '&gt;：检索或设置对象所应用的动画名称 
+&lt;' animation-duration '&gt;：检索或设置对象动画的持续时间 
+&lt;' animation-timing-function '&gt;：检索或设置对象动画的过渡类型 
+&lt;' animation-delay '&gt;：检索或设置对象动画延迟的时间 
+&lt;' animation-iteration-count '&gt;：检索或设置对象动画的循环次数 
+&lt;' animation-direction '&gt;：检索或设置对象动画在循环中是否反向运动 
+&lt;' animation-fill-mode '&gt;：检索或设置对象动画时间之外的状态 
+&lt;' animation-play-state '&gt;：检索或设置对象动画的状态。w3c正考虑是否将该属性移除，因为动画的状态可以通过其它的方式实现，比如重设样式<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
                 
             </div>
@@ -1009,7 +1011,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">33.5k</span>
+                        class="white-color">35.8k</span>
             
             
             
