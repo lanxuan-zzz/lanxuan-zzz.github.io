@@ -5,12 +5,11 @@
 <head>
     <meta name="baidu-site-verification" content="code-sBx57Jg7jt" />
     <meta charset="utf-8">
-    <meta name="keywords" content="JavaScript笔记, 棉花糖">
-    <meta name="description" content="概述JavaScript 是 Web 的编程语言。JavaScript是脚本语言特点：不需要编译可以直接使用，由解释器来负责解释。
-使用方法
-内部使用&amp;lt;script&amp;gt;
-    console.log(hello,word);
-&amp;">
+    <meta name="keywords" content="nuxt2初体验, 棉花糖">
+    <meta name="description" content="Nuxt.js 是什么？
+Nuxt.js 是一个基于 Vue.js 的通用应用框架。
+通过对客户端/服务端基础架构的抽象组织，Nuxt.js 主要关注的是应用的 UI 渲染。
+Nuxt.js 预设了利用 Vue.js 开发服务端渲染的应用所">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -22,7 +21,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>JavaScript笔记 | 棉花糖</title>
+    <title>nuxt2初体验 | 棉花糖</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -256,12 +255,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://s1.ax1x.com/2023/06/07/pCF7uA1.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">JavaScript笔记</h1>
+                    <h1 class="description center-align post-title">nuxt2初体验</h1>
                 </div>
             </div>
         </div>
@@ -375,9 +374,13 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/nuxt2/">
+                                <span class="chip bg-color">nuxt2</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -389,28 +392,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-11-03
+                    2023-06-07
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-11-05
+                    2023-06-08
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    797
+                    1.7k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    7 分
                 </div>
                 
 
@@ -433,130 +436,221 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>JavaScript 是 Web 的编程语言。<br>JavaScript是脚本语言<br>特点：不需要编译可以直接使用，由解释器来负责解释。</p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><ol>
-<li>内部使用<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>hello<span class="token punctuation">,</span>word<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
-<li>外部导入使用<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token constant">DOCTYPE</span> html<span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span>html lang<span class="token operator">=</span><span class="token string">"en"</span><span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span>head<span class="token operator">&gt;</span>
-    <span class="token operator">&lt;</span>meta charset<span class="token operator">=</span><span class="token string">"UTF-8"</span><span class="token operator">&gt;</span>
-    <span class="token operator">&lt;</span>meta http<span class="token operator">-</span>equiv<span class="token operator">=</span><span class="token string">"X-UA-Compatible"</span> content<span class="token operator">=</span><span class="token string">"IE=edge"</span><span class="token operator">&gt;</span>
-    <span class="token operator">&lt;</span>meta name<span class="token operator">=</span><span class="token string">"viewport"</span> content<span class="token operator">=</span><span class="token string">"width=device-width, initial-scale=1.0"</span><span class="token operator">&gt;</span>
-    <span class="token operator">&lt;</span>title<span class="token operator">&gt;</span>Document<span class="token operator">&lt;</span><span class="token operator">/</span>title<span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>head<span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span>body<span class="token operator">&gt;</span>
-    
-<span class="token operator">&lt;</span><span class="token operator">/</span>body<span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span>script <span class="token keyword">import</span><span class="token operator">=</span><span class="token string">"js/js.js"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>html<span class="token operator">&gt;</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2></li>
-<li>变量<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">var</span> a
-<span class="token comment">// 注意 var会有变量提升问题，这个我们后面再讲</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
-<li>字符串<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token string">'3122321'</span>
-<span class="token string">"asdasdas"</span>
-<span class="token comment">// 被引号包裹起来的叫字符串</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
-<li>number<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token number">123132</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
-<li>布尔值<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token boolean">true</span> 
-<span class="token boolean">false</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
-<li>运算符<pre class="line-numbers language-js" data-language="js"><code class="language-js">算数运算符
-<span class="token operator">+</span> <span class="token operator">-</span> <span class="token operator">*</span> <span class="token operator">/</span> <span class="token operator">%</span>
-加减乘除取余数
-<span class="token number">3</span><span class="token operator">/</span><span class="token number">1</span>
-注意：JavaScript在计算小数时，会出现计算精度问题
-所以尽量避免使用
+                <h2 id="Nuxt-js-是什么？"><a href="#Nuxt-js-是什么？" class="headerlink" title="Nuxt.js 是什么？"></a>Nuxt.js 是什么？</h2><ul>
+<li>Nuxt.js 是一个基于 Vue.js 的通用应用框架。</li>
+<li>通过对客户端/服务端基础架构的抽象组织，Nuxt.js 主要关注的是应用的 UI 渲染。</li>
+<li>Nuxt.js 预设了利用 Vue.js 开发服务端渲染的应用所需要的各种配置。</li>
+<li>对于追求SEO优化的站点尤其推荐！</li>
+</ul>
+<h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><ul>
+<li><p>服务端渲染(通过 SSR)</p>
+<ul>
+<li>您可以使用Nuxt.js作为框架来处理项目的所有 UI 呈现。<br>启动时nuxt，它将启动具有热更新加载的开发服务器，并且Vue 服务器端渲染配置为自动为服务器呈现应用程序。</li>
+</ul>
+</li>
+<li><p>静态化预渲染</p>
+<ul>
+<li>支持 Vue.js 应用的静态化算是 Nuxt.js 的一个创新点，通过 nuxt generate 命令实现。该命令依据应用的路由配置将每一个路由静态化成为对应的 HTML 文件。</li>
+</ul>
+</li>
+</ul>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token operator">-</span><span class="token operator">|</span> pages<span class="token operator">/</span>
+<span class="token operator">--</span><span class="token operator">--</span><span class="token operator">|</span> about<span class="token punctuation">.</span>vue
+<span class="token operator">--</span><span class="token operator">--</span><span class="token operator">|</span> index<span class="token punctuation">.</span>vue<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-逻辑运算符
-<span class="token operator">||</span>  <span class="token comment">//表示一个条件为真时，为真</span>
-<span class="token operator">&amp;&amp;</span>  <span class="token comment">//表示两个条件都是真时，为真</span>
-<span class="token operator">!</span>   <span class="token comment">//表示取反结果，true为false，false为true</span>
-比较运算符
-<span class="token operator">=</span>   <span class="token comment">//表示赋值，例：a=1</span>
-<span class="token operator">==</span>  <span class="token comment">//表示等于，类型不一样，值一样，为true</span>
-<span class="token operator">===</span> <span class="token comment">//便是绝对等于，类型一样，值一样，为true</span>
-<span class="token comment">//在判断时，尽量使用===</span>
+<p>静态化后</p>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token operator">-</span><span class="token operator">|</span> dist<span class="token operator">/</span>
+<span class="token operator">--</span><span class="token operator">--</span><span class="token operator">|</span> about<span class="token operator">/</span>
+<span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">|</span> index<span class="token punctuation">.</span>html
+<span class="token operator">--</span><span class="token operator">--</span><span class="token operator">|</span> index<span class="token punctuation">.</span>html<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
-三元运算符
-条件？ <span class="token string">'true条件返回值'</span><span class="token operator">:</span><span class="token string">'false条件返回值'</span>
-<span class="token keyword">let</span> num<span class="token operator">=</span><span class="token function">propt</span><span class="token punctuation">(</span><span class="token string">'请输入你的年龄'</span><span class="token punctuation">)</span>
-<span class="token keyword">let</span> age<span class="token operator">=</span> num <span class="token operator">&gt;</span><span class="token number">18</span> <span class="token operator">?</span><span class="token string">'成年了'</span> ：<span class="token string">'没有成年'</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>age<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
-<li>NAN<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token number">NaN</span><span class="token operator">===</span><span class="token number">NaN</span>，结果为<span class="token boolean">false</span><span class="token punctuation">,</span>这个与所有的数值都不相等，包括自己<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
-<li>null和undefined<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">null</span> 表示值为空的意思
-undefind 表示未定义<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
-<li>数组<pre class="line-numbers language-js" data-language="js"><code class="language-js">数组使用<span class="token punctuation">[</span><span class="token punctuation">]</span>定义或者Arry方法
-Array可以包含任意的数据类型（包括对象）
-<span class="token keyword">var</span> arr<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
-<span class="token keyword">new</span> <span class="token class-name">Array</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span>
-<span class="token comment">//方法</span>
-arr<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 在数组最后一位添加一个或多个元素<span class="token punctuation">,</span>并返回新数组的长度<span class="token punctuation">,</span>改变原数组<span class="token punctuation">.</span><span class="token punctuation">(</span>添加多个元素用逗号隔开<span class="token punctuation">)</span>
-<span class="token function">unshift</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token function">在数组第一位添加一个或多个元素，并返回新数组的长度，改变原数组。</span><span class="token punctuation">(</span>添加多个元素用逗号隔开<span class="token punctuation">)</span>
-<span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token function">删除数组的最后一位，并且返回删除的数据，会改变原来的数组。</span><span class="token punctuation">(</span>该方法不接受参数<span class="token punctuation">,</span>且每次只能删除最后一个<span class="token punctuation">)</span>
-<span class="token function">reverse</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 将数组的数据进行反转，并且返回反转后的数组，会改变原数组
-<span class="token function">sort</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 用于对数组的元素进行排序<span class="token punctuation">,</span>并返回数组。
-arr<span class="token punctuation">.</span>lenth <span class="token punctuation">;</span>用于获取数据长度，字符串类型与对象类型数据也可使用。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
-<li>对象<pre class="line-numbers language-js" data-language="js"><code class="language-js">对象使用<span class="token punctuation">{</span><span class="token punctuation">}</span>定义<span class="token punctuation">,</span>由键值对组成
-<span class="token keyword">var</span> person<span class="token operator">=</span><span class="token punctuation">{</span>
-    <span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">'小王'</span><span class="token punctuation">,</span>
-    <span class="token literal-property property">age</span><span class="token operator">:</span><span class="token number">18</span><span class="token punctuation">,</span>
-    <span class="token literal-property property">tage</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'h5'</span><span class="token punctuation">,</span><span class="token string">'css'</span><span class="token punctuation">]</span>
-<span class="token punctuation">}</span>
-<span class="token comment">//调用</span>
-peron<span class="token punctuation">.</span>name
-person<span class="token punctuation">.</span>bth <span class="token comment">//undefined</span>
-<span class="token comment">//新增</span>
-person<span class="token punctuation">.</span>nmae1<span class="token operator">=</span><span class="token string">'小明'</span>
-<span class="token comment">// 删除键值对</span>
-<span class="token keyword">delete</span> person<span class="token punctuation">.</span>age
-<span class="token comment">// 判断是否存在</span>
-<span class="token string">'name'</span> <span class="token keyword">in</span> person <span class="token comment">//true</span>
-<span class="token string">'name3'</span> <span class="token keyword">in</span> person <span class="token comment">//false</span>
+<h2 id="废话不多说，开始安装"><a href="#废话不多说，开始安装" class="headerlink" title="废话不多说，开始安装"></a>废话不多说，开始安装</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js">npx create<span class="token operator">-</span>nuxt<span class="token operator">-</span>app <span class="token operator">&lt;</span>项目名<span class="token operator">&gt;</span>
+或
+yarn create nuxt<span class="token operator">-</span>app <span class="token operator">&lt;</span>项目名<span class="token operator">&gt;</span>
 
+<span class="token comment">// 输入命令后根据自己的实际需求进行配置</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h2><p>nuxt省略了我们配置vue-router、main.js 等繁琐流程，转而使用严格的命名格式进行路由匹配。</p>
+<h2 id="资源目录"><a href="#资源目录" class="headerlink" title="资源目录"></a>资源目录</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js">assets <span class="token operator">==</span><span class="token operator">&gt;</span>资源目录，用于组织未编译的静态资源如 <span class="token constant">LESS</span>、<span class="token constant">SASS</span> 或 JavaScript<span class="token punctuation">,</span>全局样式、字体都建议放到这里。
+
+components <span class="token operator">==</span><span class="token operator">&gt;</span> 组件目录<span class="token punctuation">,</span>组件都写放在这个文件夹里，注：Nuxt<span class="token punctuation">.</span>js 不会扩展增强该目录下 Vue<span class="token punctuation">.</span>js 组件，即这些组件不会像页面组件那样有 asyncData 方法的特性。
+
+layouts <span class="token operator">==</span><span class="token operator">&gt;</span> 布局目录， 用于组织应用的布局组件，注：若无额外配置，该目录不能被重命名。
+
+middleware <span class="token operator">==</span><span class="token operator">&gt;</span>  目录用于存放应用的中间件。
+
+pages <span class="token operator">==</span><span class="token operator">&gt;</span> 页面目录<span class="token punctuation">,</span>Nuxt<span class="token punctuation">.</span>js 框架读取该目录下所有的 <span class="token punctuation">.</span>vue 文件并自动生成对应的路由配置。<span class="token punctuation">[</span> <span class="token operator">/</span>home <span class="token operator">==</span> home文件夹\index<span class="token punctuation">.</span>vue<span class="token punctuation">]</span>
+
+plugins <span class="token operator">==</span><span class="token operator">&gt;</span> 插件目录，用来注册第三方插件。注：使用第三方插件时先查看插件官网是否有相对应的配置，一般都有单独的说明，初学者在这里采坑比较多。
+
+<span class="token keyword">static</span> <span class="token operator">==</span><span class="token operator">&gt;</span> 静态文件目录，放在这里的文件不会被Nuxt<span class="token punctuation">.</span>js调用Webpack执行，服务器启动的时候，该目录下的文件会映射至应用的根路径 <span class="token operator">/</span> 下。
+
+store <span class="token operator">==</span><span class="token operator">&gt;</span> 存放全局状态（vuex或pinia）文件。
+
+nuxt<span class="token punctuation">.</span>config<span class="token punctuation">.</span>js <span class="token operator">==</span><span class="token operator">&gt;</span> 用于 Nuxt<span class="token punctuation">.</span>js 应用的个性化配置<span class="token punctuation">,</span>一般plugins注册的第三方插件要在这里进行相关配置。
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="if判断、for和while循环"><a href="#if判断、for和while循环" class="headerlink" title="if判断、for和while循环"></a>if判断、for和while循环</h2></li>
-<li>if判断<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">let</span> age <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
-<span class="token keyword">if</span> <span class="token punctuation">(</span>age <span class="token operator">&lt;</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'kuwa~'</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>age <span class="token operator">&lt;</span> <span class="token number">18</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'haha'</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
-<li>while 循环<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">let</span> age <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
-<span class="token keyword">while</span> <span class="token punctuation">(</span>age <span class="token operator">&lt;</span> <span class="token number">100</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    age <span class="token operator">=</span> age <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>age<span class="token punctuation">)</span>
-<span class="token punctuation">}</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
-<li>for循环<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">let</span> age <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
-<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">100</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    age <span class="token operator">=</span> age <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>age<span class="token punctuation">)</span>
-<span class="token punctuation">}</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="function函数（功能）"><a href="#function函数（功能）" class="headerlink" title="function函数（功能）"></a>function函数（功能）</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">abs</span><span class="token punctuation">(</span><span class="token parameter">x</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>x <span class="token operator">&gt;=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">return</span> x<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-        <span class="token keyword">return</span> <span class="token operator">-</span>x<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-<span class="token comment">//或者</span>
-<span class="token keyword">let</span> <span class="token function-variable function">abs</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">x</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>x <span class="token operator">&gt;=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">return</span> x<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-        <span class="token keyword">return</span> <span class="token operator">-</span>x<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="JavaScript基础（完）"><a href="#JavaScript基础（完）" class="headerlink" title="JavaScript基础（完）"></a>JavaScript基础（完）</h3></li>
-</ol>
 
+<h2 id="下面开始nuxt之旅"><a href="#下面开始nuxt之旅" class="headerlink" title="下面开始nuxt之旅"></a>下面开始nuxt之旅</h2><p>首先，我们先创建这样的目录结构</p>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js">
+pages<span class="token operator">/</span>
+<span class="token operator">--</span><span class="token operator">|</span> user<span class="token operator">/</span>
+<span class="token operator">--</span><span class="token operator">--</span><span class="token operator">-</span><span class="token operator">|</span> index<span class="token punctuation">.</span>vue
+<span class="token operator">--</span><span class="token operator">--</span><span class="token operator">-</span><span class="token operator">|</span> one<span class="token punctuation">.</span>vue
+<span class="token operator">--</span><span class="token operator">|</span> index<span class="token punctuation">.</span>vue<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>在根目录的index.vue 中做一次简单的路由跳转</p>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
+    <span class="token comment">//要在页面之间使用路由，我们建议使用&lt;nuxt-link&gt; 标签，to属性不能省略。</span>
+    <span class="token punctuation">{</span><span class="token comment">/* nofollow : a 标签rel值 告诉搜索引擎 该页面不需要分享权重
+        External : a标签rel值 声明本网页属于外部网址
+        noopener noreferrer : rel值，当a设置了_blank时能规避钓鱼漏洞 
+    */</span><span class="token punctuation">}</span>
+  <span class="token operator">&lt;</span>nuxt<span class="token operator">-</span>link to<span class="token operator">=</span><span class="token string">"/"</span>  rel <span class="token operator">=</span> <span class="token string">"nofollow External noopener noreferrer"</span>  activeClass <span class="token operator">=</span> <span class="token string">"active"</span><span class="token operator">&gt;</span>首页<span class="token operator">&lt;</span><span class="token operator">/</span>nuxt<span class="token operator">-</span>link<span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span>
+<span class="token comment">//当前路由被选中时，颜色变红。</span>
+<span class="token operator">&lt;</span>style<span class="token operator">&gt;</span>
+<span class="token punctuation">.</span>active<span class="token punctuation">{</span>
+  <span class="token literal-property property">color</span><span class="token operator">:</span> red<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>style<span class="token operator">&gt;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="如果需要动态路由"><a href="#如果需要动态路由" class="headerlink" title="如果需要动态路由"></a>如果需要动态路由</h3><p>则需要这样配置路由</p>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js">pages<span class="token operator">/</span>
+<span class="token operator">--</span><span class="token operator">|</span> _slug<span class="token operator">/</span>
+<span class="token operator">--</span><span class="token operator">--</span><span class="token operator">-</span><span class="token operator">|</span> comments<span class="token punctuation">.</span>vue
+<span class="token operator">--</span><span class="token operator">--</span><span class="token operator">-</span><span class="token operator">|</span> index<span class="token punctuation">.</span>vue
+<span class="token operator">--</span><span class="token operator">|</span> users<span class="token operator">/</span>
+<span class="token operator">--</span><span class="token operator">--</span><span class="token operator">-</span><span class="token operator">|</span> _id<span class="token punctuation">.</span>vue
+<span class="token operator">--</span><span class="token operator">|</span> index<span class="token punctuation">.</span>vue<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>当访问 <code>/user/123</code> 路径时需要获取当前id的详情时，可以在<code>params</code> 参数中获取当前的ID进行数据请求（后面会讲到）</p>
+<h2 id="视图（Layout）"><a href="#视图（Layout）" class="headerlink" title="视图（Layout）"></a>视图（Layout）</h2><p>当你页面布局多个重复时，就可以使用<code>Layout</code> 来简化布局</p>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">//可通过添加 layouts/default.vue 文件来扩展应用的默认布局。</span>
+
+layout<span class="token operator">/</span>
+<span class="token operator">--</span><span class="token operator">|</span><span class="token keyword">default</span><span class="token punctuation">.</span>vue
+<span class="token comment">//或者新建一个自定义的布局</span>
+<span class="token operator">--</span><span class="token operator">|</span>blog<span class="token punctuation">.</span>vue
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>文件内容</p>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>我的博客导航栏在这里<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>nuxt <span class="token operator">/</span><span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>然后我们必须告诉页面 (即pages/posts.vue) 使用您的自定义布局：</p>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> Your template <span class="token operator">--</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">layout</span><span class="token operator">:</span> <span class="token string">'blog'</span>
+    <span class="token comment">// page component definitions</span>
+  <span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="异步数据-nuxt-axios"><a href="#异步数据-nuxt-axios" class="headerlink" title="异步数据(@nuxt/axios)"></a>异步数据(<code>@nuxt/axios</code>)</h2><p>获取异步数据之前，需要先安装和配置一下nuxt官方封装推荐的axios模块</p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">//yarn</span>
+yarn add @nuxtjs<span class="token operator">/</span>axios
+
+<span class="token comment">//npm</span>
+npm install @nuxtjs<span class="token operator">/</span>axios<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>然后将其添加到modules您的部分nuxt.config.js：</p>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">modules</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'@nuxtjs/axios'</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+<span class="token literal-property property">axios</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 可以使用baseURL，但更推荐使用代理</span>
+  <span class="token comment">//  baseURL: 'http://localhost:4000',</span>
+  <span class="token comment">// 开启代理</span>
+    <span class="token literal-property property">proxy</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">//凭证  </span>
+    <span class="token literal-property property">credentials</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">proxy</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">//开启代理</span>
+    <span class="token string-property property">"/api"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">target</span><span class="token operator">:</span> <span class="token string">"http://xxxx.com"</span><span class="token punctuation">,</span>
+       <span class="token comment">// 改变来源</span>
+      <span class="token literal-property property">changeOrigin</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token comment">// pathRewrite: {</span>
+      <span class="token comment">//   "^/htrc": "/htrc",</span>
+      <span class="token comment">// }</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// Build Configuration: https://go.nuxtjs.dev/config-build</span>
+  <span class="token literal-property property">build</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">transpile</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'axios'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+
+  <span class="token comment">// 经过这样配置过后就可以全局使用$axios了。</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="开始调接口请求数据"><a href="#开始调接口请求数据" class="headerlink" title="开始调接口请求数据"></a>开始调接口请求数据</h3><h4 id="asyncData-方法"><a href="#asyncData-方法" class="headerlink" title="asyncData 方法"></a>asyncData 方法</h4><pre class="line-numbers language-js" data-language="js"><code class="language-js">  asyncData方法会在组件（限于页面组件）每次加载之前被调用。它可以在服务端或路由更新之前被调用。在这个方法被调用的时候，第一个参数被设定为当前页面的上下文对象，你可以利用 asyncData方法来获取数据，Nuxt<span class="token punctuation">.</span>js 会将 asyncData 返回的数据融合组件 data 方法返回的数据一并返回给当前组件。
+
+注意：由于asyncData方法是在组件 初始化 前被调用的，所以在方法内是没有办法通过 <span class="token keyword">this</span> 来引用组件的实例对象。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>有两种调取数据的方法</p>
+<p>1.使用 async 或 await</p>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token keyword">async</span> <span class="token function">asyncData</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> params<span class="token punctuation">,</span> $axios<span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> data <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">await</span> $axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">https://my-api/posts/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>params<span class="token punctuation">.</span>id<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span> <span class="token literal-property property">title</span><span class="token operator">:</span> data<span class="token punctuation">.</span>title <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>2.使用 回调函数</p>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">asyncData</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> params <span class="token punctuation">,</span>$axios<span class="token punctuation">}</span><span class="token punctuation">,</span> callback</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    $axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">https://my-api/posts/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>params<span class="token punctuation">.</span>id<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token function">callback</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token literal-property property">title</span><span class="token operator">:</span> res<span class="token punctuation">.</span>data<span class="token punctuation">.</span>title <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="数据的展示"><a href="#数据的展示" class="headerlink" title="数据的展示"></a>数据的展示</h3><p>asyncData 方法返回的数据在融合 data 方法返回的数据后，一并返回给模板进行展示，如：</p>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>h1<span class="token operator">&gt;</span><span class="token punctuation">{</span><span class="token punctuation">{</span> title <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><p>在使用nuxt的过程中，我们常常需要使用一些第三方功能模块，下面使用最常用的<code>“饿了么UI”</code>做个演示。</p>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">//在plugins文件夹下创建第三方配置</span>
+
+plugins<span class="token operator">/</span>
+<span class="token operator">--</span><span class="token operator">|</span> elment<span class="token operator">-</span>ui<span class="token punctuation">.</span>js
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>elment-ui.js 文件配置</p>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
+<span class="token keyword">import</span> Element <span class="token keyword">from</span> <span class="token string">'element-ui'</span>
+<span class="token comment">//是不是感觉缺了什么？ 对，css文件，这里先卖个关子。</span>
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Element<span class="token punctuation">)</span><span class="token comment">//是不是与我们常规在vue里面的配置很接近？所以有时候第三方模块官方没有写配置说明我们也能推断出怎么配置。</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>配置好了，接下来就要去<code>nuxt.config.js</code> 里面注册。</p>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token literal-property property">css</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+   <span class="token string">'@/assets/style/main.css'</span><span class="token punctuation">,</span> <span class="token comment">//这是全局默认样式</span>
+   <span class="token string">'element-ui/lib/theme-chalk/index.css'</span><span class="token punctuation">,</span> <span class="token comment">//look，css文件出现了！！！</span>
+ <span class="token punctuation">]</span><span class="token punctuation">,</span> 
+
+  <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+   <span class="token comment">// src代表文件地址，ssr表示是否开启服务端渲染</span>
+   <span class="token punctuation">{</span>
+     <span class="token literal-property property">src</span><span class="token operator">:</span><span class="token string">'@/plugins/element-ui'</span><span class="token punctuation">,</span>
+     <span class="token literal-property property">ssr</span><span class="token operator">:</span><span class="token string">'true'</span>
+   <span class="token punctuation">}</span>，
+
+   <span class="token comment">// 或者你不要ssr渲染也可以直接这么写</span>
+    <span class="token string">'@/plugins/element-ui'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="ok，先写到这里，后期看评论有好想法的会滚动更新，拜拜！！！"><a href="#ok，先写到这里，后期看评论有好想法的会滚动更新，拜拜！！！" class="headerlink" title="ok，先写到这里，后期看评论有好想法的会滚动更新，拜拜！！！"></a>ok，先写到这里，后期看评论有好想法的会滚动更新，拜拜！！！</h2>
                 
             </div>
             <hr/>
@@ -582,7 +676,7 @@ person<span class="token punctuation">.</span>nmae1<span class="token operator">
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2022/11/03/javascript-bi-ji/">http://example.com/2022/11/03/javascript-bi-ji/</a>
+                    <a href="http://example.com/2023/06/07/nuxt2-chu-ti-yan/">http://example.com/2023/06/07/nuxt2-chu-ti-yan/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -619,7 +713,11 @@ person<span class="token punctuation">.</span>nmae1<span class="token operator">
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/nuxt2/">
+                                    <span class="chip bg-color">nuxt2</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -813,17 +911,17 @@ person<span class="token punctuation">.</span>nmae1<span class="token operator">
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/11/05/vue2-jiao-xue-bi-ji/">
+                <a href="/2023/06/07/nuxt2-chu-ti-yan/">
                     <div class="card-image">
                         
+                        <img src="https://s1.ax1x.com/2023/06/07/pCF7uA1.png" class="responsive-img" alt="nuxt2初体验">
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                        
-                        <span class="card-title"></span>
+                        <span class="card-title">nuxt2初体验</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -833,9 +931,9 @@ person<span class="token punctuation">.</span>nmae1<span class="token operator">
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-11-05
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-07
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -843,6 +941,15 @@ person<span class="token punctuation">.</span>nmae1<span class="token operator">
                             
                         </span>
                     </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/nuxt2/">
+                        <span class="chip bg-color">nuxt2</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -854,13 +961,13 @@ person<span class="token punctuation">.</span>nmae1<span class="token operator">
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/09/28/js-bi-bao/">
+                <a href="/2023/03/03/qu-diao-vue-touter-lu-you-de-fang-fa/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="js闭包">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="去掉vue-touter路由#的方法">
                         
-                        <span class="card-title">js闭包</span>
+                        <span class="card-title">去掉vue-touter路由#的方法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -871,7 +978,7 @@ person<span class="token punctuation">.</span>nmae1<span class="token operator">
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-28
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-03
                             </span>
                         <span class="publish-author">
                             
@@ -888,8 +995,8 @@ person<span class="token punctuation">.</span>nmae1<span class="token operator">
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/js/">
-                        <span class="chip bg-color">js</span>
+                    <a href="/tags/vue/">
+                        <span class="chip bg-color">vue</span>
                     </a>
                     
                 </div>
@@ -1076,7 +1183,7 @@ person<span class="token punctuation">.</span>nmae1<span class="token operator">
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">35.8k</span>
+                        class="white-color">36.8k</span>
             
             
             

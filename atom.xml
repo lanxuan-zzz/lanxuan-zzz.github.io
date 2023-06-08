@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-03-03T01:32:55.896Z</updated>
+  <updated>2023-06-08T06:30:29.388Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>nuxt2初体验</title>
+    <link href="http://example.com/2023/06/07/nuxt2-chu-ti-yan/"/>
+    <id>http://example.com/2023/06/07/nuxt2-chu-ti-yan/</id>
+    <published>2023-06-07T13:03:49.000Z</published>
+    <updated>2023-06-08T06:30:29.388Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="nuxt2" scheme="http://example.com/tags/nuxt2/"/>
+    
+  </entry>
   
   <entry>
     <title>去掉vue-touter路由#的方法</title>
