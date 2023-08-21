@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title></title>
+      <link href="/2023/07/08/html5-xiu-lian-zhi-dao-yu-yi-hua/"/>
+      <url>/2023/07/08/html5-xiu-lian-zhi-dao-yu-yi-hua/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="HTML5修炼之道"><a href="#HTML5修炼之道" class="headerlink" title="HTML5修炼之道"></a>HTML5修炼之道</h1><p>在HTML5之前，对于页面中较大块的结构（如导航、内容区、侧边栏、底部等），一般都是使用div元素来实现。但是我们都知道，div是一个无语义的元素，如果整个页面都使用div来实现，那么可读性和可维护性是非常差的。在HTML5中，新增了一组结构元素，以帮助完善页面的语义化，提高可读性、可维护性以及SEO（即搜索引擎优化）。语义化可不是简单的一个术语，可以说是HTML中最重要的概念。</p><p>因此作为一个前端开发要严谨的遵从语义化的使用规范，这不仅是作为专业人士的基本观念，更是我们职业生涯发展进步的基石。</p><h2 id="HTML5新增的主要结构元素有6个"><a href="#HTML5新增的主要结构元素有6个" class="headerlink" title="HTML5新增的主要结构元素有6个"></a>HTML5新增的主要结构元素有6个</h2><pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>header</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>article</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>article</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>aside</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>aside</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>section</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>section</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>footer</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>footer</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="header"><a href="#header" class="headerlink" title="header"></a>header</h3><p>“签如其名”，在HTML5中header通常用于表示页面的头部例如：顶部导航栏、页头、顶部LOGO等。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>nuxt2初体验</title>
       <link href="/2023/06/07/nuxt2-chu-ti-yan/"/>
       <url>/2023/06/07/nuxt2-chu-ti-yan/</url>
@@ -15,31 +28,6 @@
         <tags>
             
             <tag> nuxt2 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>去掉vue-touter路由#的方法</title>
-      <link href="/2023/03/03/qu-diao-vue-touter-lu-you-de-fang-fa/"/>
-      <url>/2023/03/03/qu-diao-vue-touter-lu-you-de-fang-fa/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>查看路由中(router/index.js)是否使用history,是的话修改为hash。或者将mode直接注掉，因为默认使用hash。</p><pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">const router = new VueRouter({  /*mode: 'history',*/  mode: 'hash',  routes:[]}) export default router<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
-      
-      
-      <categories>
-          
-          <category> 前端 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> vue </tag>
             
         </tags>
       
@@ -103,56 +91,6 @@
         <tags>
             
             <tag> vue </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>js闭包</title>
-      <link href="/2022/09/28/js-bi-bao/"/>
-      <url>/2022/09/28/js-bi-bao/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="闭包的解释"><a href="#闭包的解释" class="headerlink" title="闭包的解释"></a>闭包的解释</h2><p>以下解释来自百度百科</p><pre class="line-numbers language-none"><code class="language-none">闭包就是能够读取其他函数内部变量的函数。例如在javascript中，只有函数内部的子函数才能读取局部变量，所以闭包可以理解成“定义在一个函数内部的函数“。在本质上，闭包是将函数内部和函数外部连接起来的桥梁。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>在学习闭包前需了解全局作用域，局部作用域，和作用域链的关系</p><h2 id="先看个例子"><a href="#先看个例子" class="headerlink" title="先看个例子"></a>先看个例子</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">// 全局环境</span><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token string">"全局环境"</span><span class="token punctuation">;</span><span class="token keyword">function</span> <span class="token constant">A</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  <span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token string">"局部环境"</span><span class="token punctuation">;</span>  <span class="token constant">B</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token keyword">function</span> <span class="token constant">B</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token constant">A</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//输出结果为 “全局环境”</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="输出的过程"><a href="#输出的过程" class="headerlink" title="输出的过程"></a>输出的过程</h3><p>首先定义了一个全局环境的变量a，<br>其次在函数A的局部环境里定义了一个局部环境的a和一个调用函数b的指令，<br>当A函数被调用时，会调用b函数，b函数会现在本函数的作用域里面查找a的定义，<br>发现没有a的定义就会向上一层父域（全局作用域)寻找a的定义,<br>也就是说函数A的作用域没有包含b函数，<br>所以为了解决这个问题，闭包出现了。</p><h2 id="闭包的使用"><a href="#闭包的使用" class="headerlink" title="闭包的使用"></a>闭包的使用</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js">        <span class="token comment">// 全局环境</span><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token string">"全局环境"</span><span class="token punctuation">;</span><span class="token keyword">function</span> <span class="token constant">A</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  <span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token string">"局部环境"</span><span class="token punctuation">;</span>  <span class="token keyword">return</span> <span class="token keyword">function</span> <span class="token constant">B</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>    <span class="token keyword">return</span> a<span class="token punctuation">}</span><span class="token punctuation">}</span>    d<span class="token operator">=</span><span class="token constant">A</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>函数b被return返回了函数A的局部变量里，<br>简单理解为函数里面嵌套了另一个函数，<br>所以调用内部函数时应写对应的括号A()().</p><h2 id="闭包的优点"><a href="#闭包的优点" class="headerlink" title="闭包的优点"></a>闭包的优点</h2><p>1.保护函数内的变量安全 ，实现封装，防止变量流入其他环境发生命名冲突<br>2.在内存中维持一个变量，可以做缓存（但使用多了同时也是一项缺点，消耗内存）。<br>3.匿名自执行函数可以减少内存消耗。（function（）{}）{}</p><h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h3><p>函数内部包裹函数，作用域链得不到释放，造成消耗内存。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 前端 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> js </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>css3动画效果设置</title>
-      <link href="/2022/09/26/css3-dong-hua-xiao-guo-she-zhi/"/>
-      <url>/2022/09/26/css3-dong-hua-xiao-guo-she-zhi/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="设置CSS3动画的一般流程"><a href="#设置CSS3动画的一般流程" class="headerlink" title="设置CSS3动画的一般流程"></a>设置CSS3动画的一般流程</h2><ol><li>设置关键帧</li><li>将关键帧绑定到对应元素上</li><li>设置动画的播放时间<h3 id="关键帧动画设置"><a href="#关键帧动画设置" class="headerlink" title="关键帧动画设置"></a>关键帧动画设置</h3>@keyframes [名称] 的形式来定义关键帧。<br>form… to…来定义动画从开始到结束的样式<br>使用百分比来定义样式</li></ol><pre class="line-numbers language-css3" data-language="css3"><code class="language-css3">@keyframes example{/*第一种方式*/    form {font-size:50px}    to{font-size:30px}}@keyframes example{    10%{font-size: 50px}    50%{font-size: 30px}    90%{font-size: 10px}    100%{font-size: 0px}}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>设置好动画后，给要添加动画的元素进行绑定<br>例：</p><pre class="line-numbers language-css3" data-language="css3"><code class="language-css3">span{    animation-name: example;      animation-duration:5s;}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>animation的参数：</p><pre class="line-numbers language-css3" data-language="css3"><code class="language-css3">&lt;' animation-name '&gt;：检索或设置对象所应用的动画名称 &lt;' animation-duration '&gt;：检索或设置对象动画的持续时间 &lt;' animation-timing-function '&gt;：检索或设置对象动画的过渡类型 &lt;' animation-delay '&gt;：检索或设置对象动画延迟的时间 &lt;' animation-iteration-count '&gt;：检索或设置对象动画的循环次数 &lt;' animation-direction '&gt;：检索或设置对象动画在循环中是否反向运动 &lt;' animation-fill-mode '&gt;：检索或设置对象动画时间之外的状态 &lt;' animation-play-state '&gt;：检索或设置对象动画的状态。w3c正考虑是否将该属性移除，因为动画的状态可以通过其它的方式实现，比如重设样式<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
-      
-      
-      <categories>
-          
-          <category> 前端 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> css3 </tag>
             
         </tags>
       
@@ -262,31 +200,6 @@
         <tags>
             
             <tag> 社会人文 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>永劫无间</title>
-      <link href="/2022/06/10/you-xi/"/>
-      <url>/2022/06/10/you-xi/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="心中无学习，刀法自然神"><a href="#心中无学习，刀法自然神" class="headerlink" title="心中无学习，刀法自然神"></a><font color="red">心中无学习，刀法自然神</font></h2><hr><p><img src="https://pic.rmb.bdstatic.com/bjh/5b0f54471f485bc764e7fc273df2283c.jpeg" alt="gggin-y.jpg"><br><img src="https://pic.rmb.bdstatic.com/bjh/44b40d3632455a023fbb284be48630d4.jpeg" alt="gggin-y (1).jpg"><br><img src="https://pic.rmb.bdstatic.com/bjh/6ad855ea62ff642a6061e283fc268f45.jpeg" alt="kaijia-jia-1 (1).jpg"><br><img src="https://pic.rmb.bdstatic.com/bjh/f70f272773f4a17a27602239476a6467.jpeg" alt="kaijia-jia-1.jpg"><br><img src="https://pic.rmb.bdstatic.com/bjh/1811b64062b59fae9483c9b3ba98c8b8.jpeg" alt="kaijia-jia-23.jpg"></p><p><img src="https://pic.rmb.bdstatic.com/bjh/640f8e9bdea6c4907ebacd3385d2d06c.jpeg" alt="封面.jpg"></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 游戏 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 永劫无间 </tag>
             
         </tags>
       
